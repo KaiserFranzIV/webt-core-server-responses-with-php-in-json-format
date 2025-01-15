@@ -45,7 +45,7 @@ class seeder{
                 for ($j = 0; $j < 4; $j++){
                     $arr[$j] = new song("Song ".$j, ($j*50)." cent", $j, 120);
                 }
-            $osts[$i] = new ost("OST ". $i, "Game " .$i, "06.11.2006", json_encode($arr));
+            $osts[$i] = new ost("OST_". $i, "Game " .$i, "06.11.2006", json_encode($arr));
         }
         return $osts;
         
